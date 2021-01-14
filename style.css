@@ -1,0 +1,118 @@
+body {
+  background-color: rgb(192, 186, 186);
+  --maincolor: gray;
+  --content: rgb(102, 94, 94);
+  --darker: rgb(54, 54, 54);
+  --button: ;
+  --headline: ;
+  --text: ;
+}
+body a {
+  text-decoration: none;
+}
+.headline {
+  font-size: 80px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url("https://scontent.ftlv2-1.fna.fbcdn.net/v/t1.0-9/123138656_1786266351521194_6694733384327092090_n.jpg?_nc_cat=111&ccb=2&_nc_sid=6e5ad9&_nc_ohc=QJB3_SzEQCkAX-qLvQv&_nc_ht=scontent.ftlv2-1.fna&oh=df2d231c91509e237eadc679095e57d7&oe=6022BD69");
+  margin-top: 30px;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  color: var(--headline, black);
+}
+
+h2 {
+  color: var(--headline, black);
+  font-size: 9vh;
+  text-align: center;
+}
+p {
+  color: var(--text, white);
+  font-size: 4vh;
+}
+/* 
+  var(--maincolor',gray);
+  var(--content,rgb(102, 94, 94));
+  var(--darker,black);
+  var(--button,white);
+  var(--headline,black);
+  var(--text,white);
+  */
+.din {
+  position: fixed;
+  overflow: hidden;
+  background-color: var(--darker, black);
+  width: 100%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  top: 10px;
+}
+
+.din li {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 8vh;
+}
+main {
+  position: block;
+  float: center;
+  width: 80vw;
+  background-color: var(--content, rgb(102, 94, 94));
+  width: 80%;
+  margin: auto;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  min-height: 20vh;
+  margin-bottom: 20vh;
+}
+article {
+  width: 80%;
+  margin: auto;
+}
+#logo {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100px;
+  z-index: +1;
+  border-style: solid;
+  border-width: 15px;
+  border-color: var(--darker, black);
+  border-radius: 50%;
+}
+
+footer {
+  overflow: hidden;
+  background-color: var(--darker, black);
+  width: 100%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  top: 10px;
+}
+
+footer a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 8vh;
+}
+#contlink {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  top: 50%;
+}
+.icon {
+  height: 8vh;
+}
