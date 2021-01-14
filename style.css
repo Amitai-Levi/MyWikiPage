@@ -1,11 +1,11 @@
 body {
-  background-color: rgb(192, 186, 186);
+  background-color: #618374;
   --maincolor: gray;
-  --content: rgb(102, 94, 94);
-  --darker: rgb(54, 54, 54);
-  --evendarker: black;
+  --content: #ce8147;
+  --darker: #fc814a;
+  --evendarker: #39a0ed;
   --button: ;
-  --headline: ;
+  --headline: #052f5f;
   --text: ;
 }
 body a {
@@ -81,24 +81,21 @@ p {
   animation-fill-mode: forwards;
 }
 @keyframes link {
-  0% {
-    background-color: white;
-    opacity: 0;
-  }
   100% {
-    background-color: white;
-    opacity: 0.2;
+    transform: scale(1.2);
   }
 }
-@media screen and (max-width: 900px) {
-  .din li {
-    float: none;
-    width: 100%;
-  }
+@media screen and (max-width: 600px) {
+  .din li,
   footer a {
     float: none;
     width: 100%;
+    font-size: 20px;
   }
+  .icon {
+    height: 3vh;
+  }
+
   .din {
     margin-top: 10px;
     width: 100%;
@@ -107,6 +104,8 @@ p {
     align-items: center;
     text-align: center;
     padding: 0 50px;
+    height: 80px;
+    overflow: scroll;
   }
 }
 main {
@@ -178,10 +177,11 @@ footer a {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 30px;
-  margin-left: 8vh;
+  /* margin-left: 8vh; */
 }
 #contlink {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   height: 50%;
   width: 100%;
   top: 50%;
@@ -189,6 +189,21 @@ footer a {
 .icon {
   height: 8vh;
 }
+.productgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: minmax(auto, 50px);
+  grid-gap: 25px;
+}
+
+.productgrid img {
+  max-width: 100%;
+}
+.productgrid .icon,
+.productgrid p {
+  margin-top: 60px;
+}
+
 form input,
 form textarea {
 }
