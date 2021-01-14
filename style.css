@@ -155,3 +155,7 @@ footer a {
 .icon {
   height: 8vh;
 }
+form input,
+form textarea {
+  text-align: right;
+}
