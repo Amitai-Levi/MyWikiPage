@@ -3,12 +3,20 @@ body {
   --maincolor: gray;
   --content: rgb(102, 94, 94);
   --darker: rgb(54, 54, 54);
+  --evendarker: black;
   --button: ;
   --headline: ;
   --text: ;
 }
 body a {
   text-decoration: none;
+}
+#current {
+  background-color: var(--evendarker, black);
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  margin-top: 5px;
+  padding-bottom: -5px;
 }
 .headline {
   font-size: 80px;
@@ -47,8 +55,14 @@ p {
   overflow: hidden;
   background-color: var(--darker, black);
   width: 100%;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19); */
   top: 10px;
+}
+#navlist {
+  border-style: solid;
+  border-width: 0px;
+  border-bottom-width: 15px;
+  border-color: var(--evendarker, black);
 }
 
 .din li {
@@ -77,6 +91,31 @@ article {
   width: 80%;
   margin: auto;
 }
+.picgal {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--darker, black);
+  background-color: rgb(36, 32, 32);
+  text-align: center;
+  padding: 10rem 2rem;
+}
+.pictile {
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+  width: 400px;
+  height: 600px;
+  margin: 10px 10px 10px 10px;
+}
+.pictile img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+.pictile img:hover {
+  transform: scale(1.2);
+  transform: scale(1.2);
+}
 #logo {
   position: fixed;
   right: 0;
@@ -85,7 +124,7 @@ article {
   z-index: +1;
   border-style: solid;
   border-width: 15px;
-  border-color: var(--darker, black);
+  border-color: var(--evendarker, black);
   border-radius: 50%;
 }
 
