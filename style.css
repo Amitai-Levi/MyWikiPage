@@ -90,15 +90,17 @@ p {
     opacity: 0.2;
   }
 }
-@media screen and (max-width: 900px) {
-  .din li {
-    float: none;
-    width: 100%;
-  }
+@media screen and (max-width: 600px) {
+  .din li,
   footer a {
     float: none;
     width: 100%;
+    font-size: 20px;
   }
+  .icon {
+    height: 3vh;
+  }
+
   .din {
     margin-top: 10px;
     width: 100%;
@@ -107,6 +109,8 @@ p {
     align-items: center;
     text-align: center;
     padding: 0 50px;
+    height: 80px;
+    overflow: scroll;
   }
 }
 main {
@@ -178,10 +182,11 @@ footer a {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 30px;
-  margin-left: 8vh;
+  /* margin-left: 8vh; */
 }
 #contlink {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   height: 50%;
   width: 100%;
   top: 50%;
