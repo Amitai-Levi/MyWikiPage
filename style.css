@@ -1,11 +1,11 @@
 body {
-  background-color: rgb(192, 186, 186);
+  background-color: #618374;
   --maincolor: gray;
-  --content: rgb(102, 94, 94);
-  --darker: rgb(54, 54, 54);
-  --evendarker: black;
+  --content: #ce8147;
+  --darker: #fc814a;
+  --evendarker: #39a0ed;
   --button: ;
-  --headline: ;
+  --headline: #052f5f;
   --text: ;
 }
 body a {
@@ -81,13 +81,8 @@ p {
   animation-fill-mode: forwards;
 }
 @keyframes link {
-  0% {
-    background-color: white;
-    opacity: 0;
-  }
   100% {
-    background-color: white;
-    opacity: 0.2;
+    transform: scale(1.2);
   }
 }
 @media screen and (max-width: 600px) {
@@ -194,6 +189,21 @@ footer a {
 .icon {
   height: 8vh;
 }
+.productgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: minmax(auto, 50px);
+  grid-gap: 25px;
+}
+
+.productgrid img {
+  max-width: 100%;
+}
+.productgrid .icon,
+.productgrid p {
+  margin-top: 60px;
+}
+
 form input,
 form textarea {
 }
