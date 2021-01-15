@@ -113,36 +113,13 @@ label {
     transform: scale(1.2);
   }
 }
-@media screen and (max-width: 600px) {
-  .din li,
-  footer a {
-    float: left;
-    width: 100%;
-    font-size: 20px;
-    text-align: left;
-  }
-  .icon {
-    height: 3vh;
-  }
 
-  .din {
-    margin-top: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    padding: 0 50px;
-    height: 80px;
-    overflow: scroll;
-  }
-}
 main {
   position: relative;
   float: center;
   width: 80vw;
   background-color: var(--content, rgb(102, 94, 94));
-  width: 80%;
+
   margin: auto;
   padding-top: 2vh;
   padding-bottom: 2vh;
@@ -156,6 +133,7 @@ article {
   margin: auto;
   animation-duration: 3000ms;
 }
+
 .picgal {
   display: flex;
   flex-wrap: wrap;
@@ -168,7 +146,7 @@ article {
   text-align: center;
   font-size: 30px;
   width: 400px;
-  height: 600px;
+  height: 400px;
   margin: 10px 10px 10px 10px;
 }
 .pictile img {
@@ -264,4 +242,32 @@ a .icon:hover {
 }
 .contsubmit {
   bottom: 4px;
+}
+@media screen and (max-width: 600px) {
+  .din li,
+  footer a {
+    float: left;
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+  }
+  .icon {
+    height: 3vh;
+  }
+
+  .din {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 0 50px;
+    height: 80px;
+    overflow: scroll;
+  }
+  main,
+  article {
+    width: 95vw;
+  }
 }
