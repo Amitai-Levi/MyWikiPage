@@ -23,21 +23,24 @@
     </header>
     <main>
       <h2>Contact</h2>
-      <article>
-        <div class="">
-          <a href="mailto: ialevi@walla.com" class="contlink">
-            <img class="icon" src="email.png" alt="" /> Email</a
-          >
-
-          <p class="contlink">
+      <article class="contgrid">
+        <span>
+          <p>
+            <a href="mailto: ialevi@walla.com">
+              <img class="icon" src="email.png" alt="" /> Email</a
+            >
+          </p></span
+        >
+        <span>
+          <p>
             <img class="icon" src="phone.png" alt="" />Cell : Doron Levi -
             0528477506
-          </p>
-        </div>
+          </p></span
+        >
       </article>
       <article>
         <p>Or leave your info and we will contact you soon!</p>
-        <form action="">
+        <form class="contact" action="">
           <label for="name">Full name</label>
           <input type="text" name="name" id="name" required />
           <br />
@@ -49,7 +52,8 @@
           <br />
           <label for="massage">Your massage(optional)</label>
           <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
-          <button type="submit">submit</button>
+          <br />
+          <button class="contsubmit" type="submit">submit</button>
         </form>
       </article>
     </main>
