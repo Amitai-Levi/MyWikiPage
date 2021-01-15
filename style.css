@@ -108,6 +108,7 @@ label {
   animation-duration: 500ms;
   animation-fill-mode: forwards;
 }
+<<<<<<< Updated upstream
 @keyframes link {
   100% {
     transform: scale(1.2);
@@ -137,12 +138,14 @@ label {
     overflow: scroll;
   }
 }
+=======
+>>>>>>> Stashed changes
 main {
   position: relative;
   float: center;
   width: 80vw;
   background-color: var(--content, rgb(102, 94, 94));
-  width: 80%;
+
   margin: auto;
   padding-top: 2vh;
   padding-bottom: 2vh;
@@ -156,6 +159,12 @@ article {
   margin: auto;
   animation-duration: 3000ms;
 }
+@keyframes link {
+  100% {
+    transform: scale(1.2);
+  }
+}
+
 .picgal {
   display: flex;
   flex-wrap: wrap;
@@ -168,7 +177,7 @@ article {
   text-align: center;
   font-size: 30px;
   width: 400px;
-  height: 600px;
+  height: 400px;
   margin: 10px 10px 10px 10px;
 }
 .pictile img {
@@ -251,6 +260,38 @@ footer a {
   position: relative;
   padding-bottom: 190px;
 }
+<<<<<<< Updated upstream
+=======
+@media screen and (max-width: 600px) {
+  .din li,
+  footer a {
+    float: none;
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+  }
+  .icon {
+    height: 3vh;
+  }
+
+  .din {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 50px;
+    height: 80px;
+    overflow: scroll;
+  }
+  main,
+  article {
+    width: 95vw;
+  }
+}
+
+>>>>>>> Stashed changes
 form input,
 form textarea,
 form button {
