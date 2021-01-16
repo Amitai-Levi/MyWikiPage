@@ -136,44 +136,26 @@ nav > a {
     transform: scale(1.2);
   }
 }
-@media screen and (max-width: 600px) {
-  .din li,
-  footer a {
-    float: left;
-    width: 100%;
-    font-size: 20px;
-    text-align: left;
-  }
-  .icon {
-    height: 3vh;
-  }
 
-  .din {
-    margin-top: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-<<<<<<< Updated upstream
-    padding: 0 50px;
-    height: 80px;
-    overflow: scroll;
-=======
-   padding: 0;
-    height: 80px;
-    overflow: scroll;
-    overflow-x: hidden;
-    
->>>>>>> Stashed changes
-  }
-}
+/* .din {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+
+  padding: 0;
+  height: 80px;
+  overflow: scroll;
+  overflow-x: hidden;
+} */
 main {
   position: relative;
   float: center;
   width: 80vw;
   background-color: var(--content, rgb(102, 94, 94));
-  width: 80%;
+
   margin: auto;
   padding-top: 2vh;
   padding-bottom: 2vh;
@@ -187,36 +169,35 @@ article {
   margin: auto;
   animation-duration: 3000ms;
 }
+
 .picgal {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
 }
-.pictile ,.pictile iframe{
+.pictile,
+.pictile iframe {
   margin: 10px;
   text-align: center;
   font-size: 30px;
   width: 400px;
-<<<<<<< Updated upstream
-  height: 600px;
-=======
   height: 300px;
->>>>>>> Stashed changes
   margin: 10px 10px 10px 10px;
   border-width: 0px;
   position: relative;
 }
-.pictile img, .pictile video {
+.pictile img,
+.pictile video {
   max-height: 100%;
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    position:absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .pictile img:hover {
   animation-name: link;
@@ -263,37 +244,35 @@ footer .contgrid {
   grid-template-columns: 1fr 1fr 1fr;
 }
 @media screen and (max-width: 490px) {
-  footer{
+  footer {
     padding-bottom: 30px;
   }
   footer .contgrid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-  }}
-  @media screen and (max-width: 900px) and (min-width:490px) {
-    footer{
-      padding-bottom: 30px;
-    }
-      
-    }
-  /* #contlink {
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 490px) {
+  footer {
+    padding-bottom: 30px;
+  }
+}
+/* #contlink {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 50%;
   max-width: 100%;
   top: 50%;
-<<<<<<< Updated upstream
-}
+} */
 .icon {
   height: 8vh;
-  position: relative;
-  left: -20px;
+  /* position: relative;
+  left: -20px; */
 }
 .contgrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: minmax(auto, 50px);
-
   margin-top: -50px;
   padding-bottom: 30px;
 }
@@ -316,6 +295,8 @@ footer .contgrid {
   position: relative;
   padding-bottom: 190px;
 }
+form {
+}
 form input,
 form textarea,
 form button {
@@ -329,54 +310,34 @@ a .icon:hover {
 }
 .contsubmit {
   bottom: 4px;
-=======
-} */
+}
+@media screen and (max-width: 600px) {
+  .din li,
+  footer a {
+    float: left;
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+  }
   .icon {
-    height: 8vh;
-    /* position: relative;
-  left: -20px; */
-  }
-  .contgrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(auto, 50px);
-    margin-top: -50px;
-    padding-bottom: 30px;
-  }
-  .productgrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: minmax(auto, 50px);
-    grid-gap: 25px;
+    height: 3vh;
   }
 
-  .productgrid img {
-    max-width: 100%;
+  .din {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+
+    padding: 0;
+    height: 80px;
+    overflow: scroll;
+    overflow-x: hidden;
   }
-  .productgrid .icon,
-  .productgrid p {
-    margin-top: 60px;
-    justify-self: center;
+  main,
+  article {
+    width: 95vw;
   }
-  .contact {
-    position: relative;
-    padding-bottom: 190px;
-  }
-  form {
-  }
-  form input,
-  form textarea,
-  form button {
-    position: absolute;
-    right: 3vw;
-  }
-  a .icon:hover {
-    animation-name: link;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-  }
-  .contsubmit {
-    bottom: 4px;
-  }
->>>>>>> Stashed changes
 }
