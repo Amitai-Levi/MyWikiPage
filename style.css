@@ -1,4 +1,5 @@
 body {
+  font-family: "Noto Sans", sans-serif;
   --maincolor: gray;
   --content: #ce8147;
   --darker: #fc814a;
@@ -10,6 +11,7 @@ body {
   animation-name: appearance;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
+  margin: 0;
 }
 @keyframes appearance {
   0% {
@@ -73,22 +75,41 @@ label {
   var(--headline,black);
   var(--text,white);
   */
-.din {
+nav {
   position: fixed;
-  overflow: hidden;
-  background-color: var(--darker, black);
   width: 100%;
-  z-index: +5;
-  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19); */
   top: 10px;
-  animation-name: appearance;
-  animation-duration: 1000ms;
-}
-#navlist {
+  background-color: var(--darker, black);
   border-style: solid;
   border-width: 0px;
   border-bottom-width: 15px;
   border-color: var(--evendarker, black);
+  z-index: +5;
+}
+nav > a {
+  width: 10%;
+  height: 100%;
+}
+.list-container {
+  display: inline-block;
+  width: 80%;
+}
+.din {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  overflow: hidden;
+  background-color: var(--darker, black);
+  z-index: +5;
+  /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19); */
+  animation-name: appearance;
+  animation-duration: 1000ms;
+}
+#navlist {
+  /* border-style: solid;
+  border-width: 0px;
+  border-bottom-width: 15px;
+  border-color: var(--evendarker, black); */
 }
 
 .din li {
@@ -99,9 +120,11 @@ label {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 30px;
-  margin-left: 8vh;
+  /* margin-left: 8vh; */
   border-top-left-radius: 10%;
   border-top-right-radius: 10%;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 .din li:hover {
   animation-name: link;
@@ -132,9 +155,17 @@ label {
     flex-direction: column;
     align-items: center;
     text-align: left;
+<<<<<<< Updated upstream
     padding: 0 50px;
     height: 80px;
     overflow: scroll;
+=======
+   padding: 0;
+    height: 80px;
+    overflow: scroll;
+    overflow-x: hidden;
+    
+>>>>>>> Stashed changes
   }
 }
 main {
@@ -159,26 +190,41 @@ article {
 .picgal {
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--darker, black);
   text-align: center;
-  padding: 10rem 2rem;
 }
-.pictile {
+.pictile ,.pictile iframe{
   margin: 10px;
   text-align: center;
   font-size: 30px;
   width: 400px;
+<<<<<<< Updated upstream
   height: 600px;
+=======
+  height: 300px;
+>>>>>>> Stashed changes
   margin: 10px 10px 10px 10px;
+  border-width: 0px;
+  position: relative;
 }
-.pictile img {
-  width: 100%;
-  height: auto;
+.pictile img, .pictile video {
   max-height: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 .pictile img:hover {
-  transform: scale(1.2);
-  transform: scale(1.2);
+  animation-name: link;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+
+  /* transform: scale(1.2);
+  transform: scale(1.2); */
 }
 #logo {
   position: fixed;
@@ -202,7 +248,8 @@ footer {
   animation-duration: 1000ms;
 }
 
-footer a {
+footer a,
+footer p {
   float: left;
   display: block;
   color: black;
@@ -210,14 +257,32 @@ footer a {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 30px;
-  /* margin-left: 8vh; */
+  margin: 0px;
 }
-#contlink {
+footer .contgrid {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 490px) {
+  footer{
+    padding-bottom: 30px;
+  }
+  footer .contgrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }}
+  @media screen and (max-width: 900px) and (min-width:490px) {
+    footer{
+      padding-bottom: 30px;
+    }
+      
+    }
+  /* #contlink {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 50%;
   max-width: 100%;
   top: 50%;
+<<<<<<< Updated upstream
 }
 .icon {
   height: 8vh;
@@ -264,4 +329,54 @@ a .icon:hover {
 }
 .contsubmit {
   bottom: 4px;
+=======
+} */
+  .icon {
+    height: 8vh;
+    /* position: relative;
+  left: -20px; */
+  }
+  .contgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(auto, 50px);
+    margin-top: -50px;
+    padding-bottom: 30px;
+  }
+  .productgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(auto, 50px);
+    grid-gap: 25px;
+  }
+
+  .productgrid img {
+    max-width: 100%;
+  }
+  .productgrid .icon,
+  .productgrid p {
+    margin-top: 60px;
+    justify-self: center;
+  }
+  .contact {
+    position: relative;
+    padding-bottom: 190px;
+  }
+  form {
+  }
+  form input,
+  form textarea,
+  form button {
+    position: absolute;
+    right: 3vw;
+  }
+  a .icon:hover {
+    animation-name: link;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+  .contsubmit {
+    bottom: 4px;
+  }
+>>>>>>> Stashed changes
 }
