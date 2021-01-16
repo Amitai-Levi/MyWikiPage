@@ -313,7 +313,8 @@ a .icon:hover {
 }
 @media screen and (max-width: 600px) {
   .din li,
-  footer a {
+  footer a,
+  footer p {
     float: left;
     width: 100%;
     font-size: 20px;
@@ -339,5 +340,9 @@ a .icon:hover {
   main,
   article {
     width: 95vw;
+  }
+  .pictile {
+    width: 90vw;
+    height: 65vw;
   }
 }
